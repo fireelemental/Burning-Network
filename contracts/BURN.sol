@@ -1,5 +1,9 @@
 //SPDX-License-Identifier: MIT
 
+// Burning Network
+// Total Supply - 21000 BURN
+// Website: https://burning.network/
+
 pragma solidity ^0.6.0;
 
 // File: @openzeppelin/contracts/math/SafeMath.sol
