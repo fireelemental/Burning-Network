@@ -44,6 +44,7 @@ library SafeMath {
         return c;
     }
     
+    // Added ceil
     function ceil(uint256 a, uint256 m) internal pure returns (uint256 r) {
         return (a + m - 1) / m * m;
     }
