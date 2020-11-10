@@ -108,7 +108,7 @@ contract Ownable is Context {
 
 // File: @Burning-Network/contracts/BURN.sol
 
-contract ERC20 is Context, IERC20, Ownable {
+contract BURN is Context, IERC20, Ownable {
     using SafeMath for uint256;
 
     mapping (address => uint256) private _balances;
