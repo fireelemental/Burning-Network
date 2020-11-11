@@ -1,3 +1,7 @@
+/**
+ *Submitted for verification at Etherscan.io on 2020-11-11
+*/
+
 // SPDX-License-Identifier: MIT
 
 // Burning Network
@@ -201,9 +205,9 @@ contract Staking is Ownable {
     }
     
     // Function to check your current reward
-    function checkReward() public view returns (uint256) {
-        uint256 amount = rewardPool.mul(_stakes[msg.sender]).div(stakingPool);
-        uint256 stakingTime = block.timestamp.sub(_time[msg.sender]);
+    function checkReward(address account) public view returns (uint256) {
+        uint256 amount = rewardPool.mul(_stakes[account]).div(stakingPool);
+        uint256 stakingTime = block.timestamp.sub(_time[account]);
         uint256 reward = amount.mul(3).mul(stakingTime).div(10 ** 6);
 
         if (reward > rewardPool) {
